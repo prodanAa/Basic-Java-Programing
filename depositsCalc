@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class depozits {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double deposit = Double.parseDouble(scanner.nextLine());
+        int period = Integer.parseInt(scanner.nextLine());
+        double procent = Double.parseDouble(scanner.nextLine());
+        double result = deposit + period * ((deposit * (procent/100))/12);
+        System.out.println(result);
+    }
+}
