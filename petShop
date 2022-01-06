@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+class Scratch {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+         int dogfood = Integer.parseInt(scanner.nextLine());
+         int catfood = Integer.parseInt(scanner.nextLine());
+         double dogfoodprice = 2.5;
+                 int catfoodprice = 4;
+                 double totallsum = dogfood * dogfoodprice + catfood * catfoodprice;
+        System.out.printf("%.1f lv.", totallsum);
+
+
+        }
+    }
