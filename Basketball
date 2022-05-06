@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class basketball {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int annualFee = Integer.parseInt(scanner.nextLine());
+        double sneacers = annualFee - annualFee * 0.40;
+        double outfit = sneacers - sneacers * 0.20;
+        double ball = outfit / 4;
+        double acc = ball / 5;
+        double totall = (sneacers + outfit + ball + acc + annualFee);
+        System.out.println(totall);
+    }
+}
