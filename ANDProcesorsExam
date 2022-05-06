@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class ANDProcesorsExam {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int countprocessors = Integer.parseInt(scanner.nextLine());
+        int countemployee = Integer.parseInt(scanner.nextLine());
+        int countdays = Integer.parseInt(scanner.nextLine());
+        double workhours = countemployee * countdays * 8.0;
+        double timeprocesors = Math.floor(workhours / 3.0);
+        if ( timeprocesors <= countprocessors ){
+            double proc = (countprocessors - timeprocesors);
+            double  losses = proc * 110.10;
+            System.out.printf("Losses: -> %.2f BGN",losses);
+        }
+        else if (timeprocesors >= countprocessors){
+            double procs =(timeprocesors - countprocessors);
+            double winn = procs * 110.10;
+            System.out.printf("Profit: -> %.2f BGN",winn);
+        }
+    }
+}
